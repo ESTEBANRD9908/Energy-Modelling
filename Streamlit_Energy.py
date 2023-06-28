@@ -232,10 +232,8 @@ def main():
     std = returns.std()
     reversion_m = 2
 
-    st.markdown(f'Mean {mean}')
-    st.markdown(f'STD {std}')
-    st.markdown(f'Reversion {reversion_m}')
-
+    st.markdown(f'We can set a OU process with initial random parameters such as alpha: {reversion_m}, Omega: {mean}, beta: {std}. Note that Omega is the long-term mean,\
+                beta the mean-reversion coefficient and alpha the standard deviation of the process')
 
     Initial_params = OUParams(std,mean,reversion_m)
 
@@ -258,7 +256,7 @@ def main():
     alpha_initial = np.round(OU_params_hat.alpha,4)
     gamma_initial = np.round(OU_params_hat.gamma,4)
     beta_initial = np.round(OU_params_hat.beta,4)
-    st.markdown(f"Initial values: alpha = {alpha_initial}, gamma = {gamma_initial}, beta = {beta_initial}")
+    st.markdown(f"Initial values: alpha = {alpha_initial}, Omega = {gamma_initial}, beta = {beta_initial}")
 
 
 
