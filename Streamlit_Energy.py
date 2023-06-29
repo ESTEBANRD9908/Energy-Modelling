@@ -165,7 +165,7 @@ def main():
 
 
     fig6, ax = plt.subplots(1,1)
-    fig6.suptitle('Annualized volatility',fontsize=12, fontweight='bold',fontproperties=font)
+    fig6.suptitle('Annualized volatility',fontsize=12, fontweight='bold',fontproperties=font, color = 'white')
     fig6.set_size_inches(7,3)
     fig6.set_facecolor('#0E1117')
     ax.set_facecolor("#0E1117")
